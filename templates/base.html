@@ -1,0 +1,16 @@
+<form action="/article/">
+        
+    <input type="text" name="id"/>
+    <input type="submit"/>
+</form>
+
+{% block content %}
+<h1>
+
+    {{context.title}}
+</h1>
+<div>
+    <p> {{context.content}}</p>
+</div>
+
+{% endblock content%}

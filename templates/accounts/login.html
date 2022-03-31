@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    {% if error %}
+    <p id="message" style="color: red;">{{error}}</p>
+    {% endif %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div>
+            <input type="text" name="username" placeholder="username">
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+   
+</div>
+<script>
+    const message = document.getElementById("message")
+    setTimeout(() => {
+        message.style.display = "none"
+    }, 2000)
+</script>
+{% endblock %}

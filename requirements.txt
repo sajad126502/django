@@ -1,0 +1,7 @@
+asgiref==3.5.0
+dataclasses==0.6
+Django==4.0.3
+gunicorn
+psycopg2-binary
+django-dotenv==1.4.2
+sqlparse==0.4.2
